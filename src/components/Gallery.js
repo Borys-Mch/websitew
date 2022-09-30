@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import gallImg1 from "../assets/img/project-img1.png";
 import gallImg2 from "../assets/img/project-img2.png";
 import gallImg3 from "../assets/img/project-img3.png";
+import TrackVisibility from 'react-on-screen';
 
 export const Gallery = () => {
 
@@ -44,12 +45,18 @@ export const Gallery = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Gallery</h2>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+                        <TrackVisibility>
+                            {({ isVisible }) => 
+                            <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                                <h2>Gallery</h2>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            }
+                        </TrackVisibility>
                         <Tab.Container id="gallery-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>

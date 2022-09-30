@@ -10,7 +10,7 @@ export const Newsletter = ({  onValidated, staus, message }) => {
         if (staus ===  'success') clearFields();
     }, [staus])
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         email &&
         email.indexOf("@") > -1 &&

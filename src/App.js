@@ -5,6 +5,7 @@ import { Banner } from './components/Banner';
 import { Slider } from './components/Slider';
 import { Gallery } from './components/Gallery';
 import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Slider />
       <Gallery />
       <Contact />
+      <Footer />
     </div>
   );
 }
