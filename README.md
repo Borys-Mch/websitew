@@ -10,4 +10,4 @@ Built using:
 - CSS framework: React-bootstrap
 - CSS animations library: Animate.css
 
-Result: [websitew](https://websitew.dbm.pp.ua/)
+Result: [websitew](https://websitew.deren.icu/)
